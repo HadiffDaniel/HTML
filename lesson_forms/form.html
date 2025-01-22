@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utp-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Simple Form</title>
+        
+    </head>
+
+    <body>
+        <p>required fields are followed by<span aria-label="required">*</span>.</p>
+
+        <!--Input form-->
+        <form>
+            <p>
+                <div><label for="name">Name:<span aria-label="required">*</span></label>
+                <input type="text" name="user_name" id="name" placeholder="enter your name"></div>
+            </p>
+                
+            <p>
+                <div><label for="mail">Email:<span aria-label="required">*</span></label>
+                <input type="email" name="user_mail" id="email" placeholder="Enter your email"></div>
+            </p>
+
+            <p>
+                <label for="message">Text:<span aria-label="required">*</span></label>
+                <textarea name="user_text" id="message" placeholder="Enter your text"></textarea>
+            </p>
+
+            <p class="button_submit">
+                <button type="submit">
+                    Send your message
+                </button>
+            </p>
+
+
+        <!--radio form-->
+
+        <fieldset>
+            <legend>what type of personality are you?</legend>
+            <p>
+                <input type="radio" id="personality_1" name="personality" value="introvert">
+                <label for="personality_1">Introvert</label>                
+            </p>
+            <p>
+                <input type="radio" id="personality_2" name="personality" value="extrovert">
+                <label for="personality_2">Extrovert</label>
+            </p>
+            <p>
+                <input type="radio" id="personality_3" name="personality" value="ambivert">
+                <label for="personality_3">Ambivert</label>
+            </p>
+        </fieldset>
+        </form>
+        
+        
+    </body>
+    
+</html>
